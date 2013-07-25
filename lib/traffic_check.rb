@@ -1,3 +1,5 @@
+require 'traffic_check/version'
+
 class TrafficCheck
     
   def self.check
