@@ -1,5 +1,7 @@
 require 'traffic_check/version'
 
-Rails.application.routes.draw do
-  map.root :controller => "traffic_check", :action => "index"  
+WebRails::Application.routes.draw do
+  namespace :kasi, :module => 'admin', :as => 'admin' do
+    match "traffic_check" => "traffic_check#index", :via => :get, defaults: {format: 'json'}
+  end
 end
