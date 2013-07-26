@@ -1,3 +1,5 @@
+require 'traffic_check/version'
+
 module TrafficCheck
   class TrafficCheckController < ApplicationController  
     respond_to :json
