@@ -11,6 +11,9 @@ Gem::Specification.new do |s|
   s.authors       = ["Ben Golden"]
   s.email         = 'team-admin@sendgrid.com'
   s.files         = `git ls-files`.split("\n")
-  s.require_paths = ["lib", "app"]
+  s.require_paths = ["lib"]
   s.homepage      = ''
+  
+  s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.test_files    = s.files.grep(%r{^(test|spec|features)/})
 end
