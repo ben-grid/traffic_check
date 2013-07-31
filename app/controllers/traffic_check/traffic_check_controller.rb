@@ -1,7 +1,7 @@
 require 'traffic_check/version'
 
 module TrafficCheck
-  class TrafficCheckController < ApplicationController  
+  class TrafficCheckController < TrafficCheck::ApplicationController  
     respond_to :json
     skip_before_filter :force_ssl
 
