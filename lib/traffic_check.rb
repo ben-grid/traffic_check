@@ -1,4 +1,5 @@
 require 'traffic_check/version'
+require 'traffic_check/config/routes'
 
 module TrafficCheck
   class TrafficCheck  
